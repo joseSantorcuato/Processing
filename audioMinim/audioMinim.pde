@@ -2,7 +2,7 @@
 import ddf.minim.*;
 
 Minim minim;
-AudioPlayer player;
+AudioPlayer tuaudio;
 
 void setup()
 {
@@ -11,13 +11,13 @@ void setup()
   minim = new Minim(this);
   
  
-  player = minim.loadFile("groove.mp3");
+  tuaudio = minim.loadFile("tuaudio.mp3");
 }
 
 void draw()
 {
   background(0);
   stroke(255);
-  player.play();
+  tuaudio.play();
 
 }
